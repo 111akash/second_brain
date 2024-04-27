@@ -13,5 +13,5 @@ export default async function NotesPage() {
 
   const allNotes = await prisma.note.findMany({ where: { userId } });
 
-  return <div>{JSON.stringify(allNotes)}</div>;
+  return <div>{JSON.stringify(allNotes)}</div>
 }
