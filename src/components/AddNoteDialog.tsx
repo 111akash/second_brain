@@ -2,7 +2,7 @@ import { CreateNoteSchema, createNoteSchema } from "@/lib/validation/note";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
-import { Toaster, toast } from 'sonner'
+import { Toaster, toast } from "sonner";
 import {
   Dialog,
   DialogContent,
@@ -51,14 +51,13 @@ export default function AddNoteDialog({ open, setOpen }: AddNoteDialogProps) {
       toast.success("Note created.");
     } catch (error) {
       console.error(error);
-      // alert("Something went wrong. Please try again.");
       toast.error("Something went wrong. Please try again.");
     }
   }
 
   return (
     <>
-       <Toaster richColors position="bottom-right" />;
+      <Toaster richColors position="bottom-right" />
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent>
           <DialogHeader>
