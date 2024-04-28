@@ -1,4 +1,4 @@
-import {Pinecone} from "@pinecone-database/pinecone"
+import { Pinecone } from "@pinecone-database/pinecone"
 
 const apiKey = process.env.PINECONE_API_KEY
 
@@ -7,8 +7,8 @@ if(!apiKey) {
 }
 
 const pinecone = new Pinecone({
-    environment: "gcp-starter",
-    apiKey,
-})
+  apiKey,
+});
 
-export const notesIndex = pinecone.Index("secondbrain")
+export const notesIndex = pinecone.index("secondbrain");
+
