@@ -21,7 +21,7 @@ SecondbrainAI is your personal thought assistant—a powerful web app for jottin
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/secondbrainai.git
+   git clone https://github.com/111akash/secondbrainai.git
    ```
 2. Install dependencies:
    ```
