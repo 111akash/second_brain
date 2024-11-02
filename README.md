@@ -27,3 +27,9 @@ SecondbrainAI is your personal thought assistant—a powerful web app for jottin
    ```
    npm install
    ```
+3. Set up environment variables for MongoDB, Pinecone, Clerk, and OpenAI.
+4. Start the app locally:
+   ```
+   npm run dev
+   ```
+   
